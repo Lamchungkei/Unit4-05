@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Created by: Kay Lin
+// Created on: 14th-Nov_2017
+// Created for: ICS3U
+// This program displays calculattion of volume of cylinder
+
+import Darwin
+
+let pi = M_PI
+
+
+func volume(radius:Float!, height:Float!) -&gt; Float {
+    //enter radius and height(two parameters) and return them
+    
+    var volume_function : String
+    
+    let volume_fuction = 2 * Float(pi) * (pow(Float((radius)), 2)) * height!
+    
+    return volume_fuction
+} 
+
+// V function
+//var height : Float? = nil
+//var radius : Float? = nil
+
+show("Enter height: ")
+var height = Float(ask())
+//show(height)
+show("Enter radius: ")
+var radius = Float(ask())
+//show(radius)
+
+var volume_print : String
+
+if height! &lt; 0 || radius! &lt; 0 {
+    volume_print = "Please input valid number. "
+}
+else {
+    volume_print = "The volume of cylinder is "  + String(format:"%.2f", volume(radius: radius, height: height)) + " cm^3"
+}
+
+show(volume_print)
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 902}</string>
+			<key>OriginalContent</key>
+			<string>show("What is your name?")
+
+let name = ask("Name")
+
+show("Hi " + name)
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 71}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Text.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
